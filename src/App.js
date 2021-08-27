@@ -18,16 +18,17 @@ function App() {
   };
 
   const getToken = async () => {
-    const API_URL = "http://192.168.0.89:8080";
-
     try {
-      const response = await fetch(`${API_URL}/get-token`, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_SERVER_URL}/get-token`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const { token } = await response.json();
       return token;
     } catch (e) {
@@ -36,7 +37,6 @@ function App() {
   };
 
   const getStreamURLs = async (token) => {
-    const API_URL = "https://api.zujonow.com/v1/livestreams";
     const data = {
       record: true,
       name: "zujoLive",
@@ -51,7 +51,10 @@ function App() {
     };
 
     try {
-      const response = await fetch(API_URL, options);
+      const response = await fetch(
+        `${process.env.REACT_APP_VIDEOSDK_URL}/v1/livestreams`,
+        options
+      );
       const jsonResp = await response.json();
       return jsonResp;
     } catch (e) {
@@ -135,7 +138,7 @@ function App() {
 
   const UpStream = () => {
     const str = streamURLs.upstreamUrl;
-    const serverUrl = str && str.substr(0, 29);
+    const serverUrl = str && str.substr(0, 28);
     const streamKey = str && str.split("/")[4];
 
     return (
