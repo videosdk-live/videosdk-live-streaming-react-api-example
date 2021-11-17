@@ -8,7 +8,6 @@ This code sample demonstrates a [Video Live Streaming API](https://docs.videosdk
 - Easy to connect with any social media live streaming API.
 - Low latency across the globe.
 
-![video-sdk-mobile.jpg](./public/live-streaming.jpg)
 
 ## Features
 
