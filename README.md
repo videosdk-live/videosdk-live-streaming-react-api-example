@@ -33,7 +33,7 @@ You must have the following installed:
 2. Clone the repo
 
    ```sh
-   $ git clone https://github.com/videosdk-live/videosdk-live-streaming-react-api-example.git
+   git clone https://github.com/videosdk-live/videosdk-live-streaming-react-api-example.git
    ```
 
 3. Copy the `.env.example` file to `.env` file.
