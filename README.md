@@ -1,6 +1,6 @@
 # Video SDK live streaming react api example
 
-This code sample demonstrates a [Video Live Streaming API](https://docs.videosdk.live/docs/overview/live-streaming/introduction) using react js.
+This code sample demonstrates a [Video Live Streaming API](https://docs.videosdk.live/docs/guide/standard-live-streaming-api-sdk/getting-started) using react js.
 
 - Built for serverless live broadcasting experience.
 - Scale it up to millions of the channels and users at the same time.
@@ -39,7 +39,7 @@ You must have the following installed:
 3. Copy the `.env.example` file to `.env` file.
 
    ```sh
-   $ cp .env.example .env
+   cp .env.example .env
    ```
 
 4. Update the api server url in the `.env` file that points to the authentication server.
@@ -51,13 +51,13 @@ You must have the following installed:
 5. Install NPM packages
 
    ```sh
-   $ npm install
+   npm install
    ```
 
 6. Run the app
 
    ```sh
-   $ npm run start
+   npm run start
    ```
 
-For more information, visit [official documentation](https://docs.videosdk.live/docs/live-streaming/intro)
+For more information, visit [official documentation](https://docs.videosdk.live/docs/guide/standard-live-streaming-api-sdk/getting-started)
