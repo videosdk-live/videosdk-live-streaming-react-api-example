@@ -39,7 +39,7 @@ function App() {
   const getStreamURLs = async (token) => {
     const data = {
       record: true,
-      name: "zujoLive",
+      name: "videosdk",
     };
     const options = {
       method: "POST",
